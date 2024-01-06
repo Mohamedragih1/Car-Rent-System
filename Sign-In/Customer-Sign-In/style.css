@@ -1,0 +1,36 @@
+.sign-form{
+    height: 40vi;
+    /* margin-top: 100px; */
+}
+
+.heading{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #36454F;
+    font-weight: 900;
+}
+
+html{
+    background-color: black;
+}
+#myForm{
+    background-color: #FFD700;
+    border-radius: 40px;
+}
+.ashraf{
+    margin-top: 40px;
+    background-color: black;
+}
+#mega {
+    background-color: black; 
+    color: white; 
+}
+#mybutton{
+    margin: 5px;
+    color: #FFD700 ;
+    background-color: black;
+    border-color: black;
+}
+.cell{
+    margin: 5px;
+    width: 300px;
+}

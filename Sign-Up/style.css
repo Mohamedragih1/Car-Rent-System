@@ -1,0 +1,25 @@
+.ashraf{
+    background-color: #FFD700;
+}
+
+.container{
+    height: 60vi;
+}
+
+.footer{
+    height: fit-content;
+}
+
+.submitButton{
+    margin-left: 90px;
+}
+
+form h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 900;
+}
+
+form label{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}

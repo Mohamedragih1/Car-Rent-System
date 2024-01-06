@@ -1,0 +1,163 @@
+.container{
+    background-color: #FFD700;
+    height: 35vi;
+    border-radius: 40px;
+}
+.done{
+    background-color: black;
+    margin-top: 60px;
+}
+html{
+    background-color: black;
+}
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: xxx-large;
+    font-weight: bolder;
+    text-align: center;
+    
+}
+label{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: x-large;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.cell2{
+    margin-top: 10px;
+    width: 200px;
+    height: 40px;
+  
+}
+.cell1{
+    margin-top: 40px;
+    width: 200px;
+    height: 40px;
+    background-color: black;
+    color: #FFD700;
+}
+
+
+
+
+
+
+
+
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.input-group input[type="text"] {
+    padding: 8px;
+    font-size: 16px;
+}
+
+.submit-btn {
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #2980b9;
+} */
+
+
+
+
+
+
+
+
+
+
+
+/* 
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.input-group input[type="text"] {
+    padding: 8px;
+    font-size: 16px;
+}
+
+.submit-btn {
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #2980b9;
+} */

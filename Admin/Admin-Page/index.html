@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Page</title>
+    <link
+    rel="stylesheet"
+    href="./style.css"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="./script.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="d-flex align-items-center gap-3 navbar-brand"><img src="./Assets/car-front-fill.svg" alt="Brand-icon" height="40" class="--bs-danger"> <h1>Driving Knights</h1></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">   
+            <form class="d-flex gap-2" role="choose">
+              <a href="../../Home/index.html"><button type="button" class="btn btn-danger yalla">Log Out</button></a>
+            </form>
+          </div>
+        </div>
+      </nav>
+<div class = "done">
+    <div class = "container"> 
+    <h1 >Welcome Admin!</h1>
+
+    <div class="button-container d-flex flex-column flex-wrap justify-content-center align-items-center my-2">
+        <button class="action-button" onclick="showReservations()">Show All Reservations</button>
+        <button class="action-button" onclick="showCarReservations()">Show Specific Car Reservations</button>
+        <button class="action-button" onclick="showUserReservations()">Show Specific User Reservations</button>
+        <button class="action-button" onclick="addCar()">Add Car</button>
+        <button class="action-button" onclick="changeCarStatus()">Change Car Status</button>
+        <button class="action-button" onclick="carsStatus()">Cars Status</button>
+        <button class="action-button" onclick="dailyPayments()">Daily Payments</button>
+    </div>
+
+    </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

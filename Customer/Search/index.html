@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html data-bs-theme="dark">
+<head>
+    <title>Welcome!</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            function fetchBrands() {
+                $.ajax({
+                    type: 'POST',
+                    url: 'fetch_brands.php',
+                    success: function(response) {
+                        $('#Brand').html(response);
+                    },
+                    error: function(xhr, status, error) {
+                        console.error(xhr.responseText);
+                    }
+                });
+            }
+            $('#Brand').change(function() {
+                fetchModels(); // Fetch new models when brand changes
+            });
+            function fetchModels() {
+                var selectedBrand = $('#Brand').val();
+                $.ajax({
+                    type: 'POST',
+                    url: 'fetch_models.php',
+                    data: { brand: selectedBrand },
+                    success: function(response) {
+                        $('#Model').html(response);
+                    },
+                    error: function(xhr, status, error) {
+                        console.error(xhr.responseText);
+                    }
+                });
+            }
+
+            function fetchColors() {
+                $.ajax({
+                    type: 'POST',
+                    url: 'fetch_colors.php',
+                    success: function(response) {
+                        $('#Color').html(response);
+                    },
+                    error: function(xhr, status, error) {
+                        console.error(xhr.responseText);
+                    }
+                });
+            }
+
+            function fetchYears() {
+                $.ajax({
+                    type: 'POST',
+                    url: 'fetch_years.php',
+                    success: function(response) {
+                        $('#Year').html(response);
+                    },
+                    error: function(xhr, status, error) {
+                        console.error(xhr.responseText);
+                    }
+                });
+            }
+
+            // Initial fetch on page load
+            fetchBrands();
+            fetchModels();
+            fetchColors();
+            fetchYears();
+        });
+    </script>
+    <link
+    rel="stylesheet"
+    href="./styles.css"
+    >
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <!--Navigation bar-->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="d-flex align-items-center gap-3 navbar-brand"><img src="./Login page/Assets/car-front-fill.svg" alt="Brand-icon" height="40" class="--bs-danger"> <h1>Driving Knights</h1></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">   
+        <form class="d-flex gap-2" role="choose">
+          <a href="../view/history.php"><button type="button" class="btn btn-success">History</button></a>
+          <a href="../Delete/deleteAccount.php"><button type="button" class="btn btn-danger">Delete account</button></a>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+    <div class="search-container container">
+    <div class="search d-flex flex-column justify-content-center align-items-center flex-fill gap-3 mt-5">    
+    <form action="search.php" method="post">
+        <h1 class="mb-3">Choose your search criteria</h1>
+        <label for="Location">Select your region:</label>
+        <select id="Location" name="Location">
+            <option value="Alexandria">Alexandria</option>
+            <option value="Cairo">Cairo</option>
+            <option value="Luxor">Luxor</option>
+            <option value="Aswan">Aswan</option>
+            <option value="Sharm El Sheikh">Sharm El Sheikh</option>
+            <option value="Giza">Giza</option>
+            <option value="Mansoura">Mansoura</option>
+            <option value="Hurghada">Hurghada</option>
+            <option value="Damanhour">Damanhour</option>
+            <option value="Port Said">Port Said</option>
+        </select>
+        <br><br>
+        <label for="Brand">Select car brand:</label>
+        <select id="Brand" name="Brand">
+            <option selected="ANY">ANY</option>
+        </select>
+        <br><br>
+        <label for="Model">Select car model:</label>
+        <select id="Model" name="Model">
+            <option value="ANY">ANY</option>
+        </select>
+        <br><br>
+        <label for="Color">Select car color:</label>
+        <select id="Color" name="Color">
+        </select>
+        <br><br>
+        <label for="Year">Select car year:</label>
+        <select id="Year" name="Year">
+        </select>
+        <br><br>
+        <label  for="MinPricePerDay">Enter minimum price per day:</label>
+        <input class="x" type="number" id="MinPricePerDay" name="MinPricePerDay" min="0">
+        <br><br>
+        <label   for="MaxPricePerDay">Enter maximum price per day:</label>
+        <input  class="x" type="number" id="MaxPricePerDay" name="MaxPricePerDay" min="0">
+        <br><br>
+        <label  for="MinMiles">Enter minimum mileage:</label>
+        <input class="x" type="number" id="MinMiles" name="MinMiles" min="0">
+        <br><br>
+        <label  for="MaxMiles">Enter maximum mileage:</label>
+        <input class="x" type="number" id="MaxMiles" name="MaxMiles" min="0">
+        <br><br>
+        <input class="search-button" type="submit" value="SEARCH">
+    </form>
+</div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

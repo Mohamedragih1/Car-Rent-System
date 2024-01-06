@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Change Car Status</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+     <link
+     rel="stylesheet"
+     href="./style.css"
+     />
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+     <script src="./script.js"></script>
+</head>
+<body>
+    <div class = "done">
+    <div class = "container">
+    <h1>Change Car Status</h1>
+
+    <form action="changeCarStatus.php" class = "d-flex flex-column flex-wrap justify-content-center align-items-center my-2" method="post">
+        <label for="Car">Select Car:</label>
+        <select class = "gooo" id="Car" name="Car">
+        </select>
+        <label for="status">Select Status:</label>
+        <select class = "goo" id="status" name="status">
+        <option value="0">Available</option>
+        <option value="1">Out Of Service</option>
+        </select>
+        <label for="startDate" id="startDateLabel" style="display: none;">Start Date:</label>
+        <input class = "goo" type="date" id="startDate" name="startDate" style="display: none;">
+
+        <label for="endDate" id="endDateLabel" style="display: none;">End Date:</label>
+        <input type="date" class = "goo" id="endDate" name="endDate" style="display: none;">
+
+        <input id = "cell" type="submit" value="Change Car Status">
+    </form>
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>

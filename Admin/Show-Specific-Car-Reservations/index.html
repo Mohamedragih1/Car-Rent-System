@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Change Car Status</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link
+    rel="stylesheet"
+    href="./style.css"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="./script.js"></script>
+</head>
+<body>
+    <div class = "done">
+    <div class = "container ">
+    <h1 >Change Car Status</h1>
+
+    <form action="showCarReservations.php" class = "d-flex flex-column flex-wrap justify-content-center align-items-center my-5" method="post">
+        <label for="Car">Select Car:</label>
+        <select class="goo" id="Car" name="Car">
+        </select><br><br>
+        <label for="startDate">Select Start Date:</label>
+        <input class="goo" type="date" id="startDate" name="startDate" required><br><br>
+        <label for="endDate">Select End Date:</label>
+        <input class="goo" type="date" id="endDate" name="endDate" required><br><br>
+       
+        <input type="submit" class="submit-btn" value="Check Car Status">
+    </form>
+</div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

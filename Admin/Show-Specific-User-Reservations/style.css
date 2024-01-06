@@ -1,0 +1,48 @@
+.container{
+    background-color: #FFD700;
+    height: 35vi;
+    border-radius: 40px;
+}
+.done{
+    background-color: black;
+    margin-top: 70px;
+}
+
+html{
+    background-color: black;
+}
+body{
+    background-color: black;
+}
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: xxx-large;
+    font-weight: bolder;
+    text-align: center;
+    
+}
+label{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: x-large;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.goo{
+    width: 200px;
+    height: 40px;
+
+}
+.gooo{
+    width: 300px;
+    height: 40px;
+
+}
+#cell{
+    margin-top: 40px;
+    width: 200px;
+    height: 40px;
+    background-color: black;
+    color: #FFD700;
+    border-radius: 40px;
+}

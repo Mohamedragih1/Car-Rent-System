@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Driving Knights</title>
+  <link
+  rel="stylesheet"
+  href="./style.css"
+  />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="./script.js"></script>
+</head>
+<body>
+  <!--Navigation bar-->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="d-flex align-items-center gap-3 navbar-brand"><img src="./Assets/car-front-fill.svg" alt="Brand-icon" height="40" class="--bs-danger"> <h1>Driving Knights</h1></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">   
+        <form class="d-flex gap-2" role="choose">
+          <a href="../Sign-In/Customer-Sign-In/index.html"><button type="button" class="btn btn-success">Login</button></a>
+          <a href="../Sign-Up/index.html"><button class="btn btn-warning" type="button">Sign up</button></a>
+          <a href="../Sign-In/Admin-Sign-In/index.html"><button type="button" class="btn btn-danger">Admin</button></a>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!--Hero-->
+  <div class="hero px-4 py-5 text-center">
+    <img class="d-block mx-auto mb-4" src="./Assets/Brand Logo.png" alt="Brand Logo" width="500" height="300">
+    <div class="col-lg-6 mx-auto">
+      <p class="hero-text lead mb-4">At Driving Knights, we redefine your journey by offering a seamless and extraordinary car rental experience. Whether you're embarking on a business trip, family vacation, or a weekend getaway, we've got the wheels to suit your needs. With a diverse fleet of meticulously maintained vehicles, cutting-edge technology, and a commitment to customer satisfaction, Driving Knights ensures that every mile you travel is a joy.</p>
+    </div>
+  </div>
+
+  <!--Features-->
+  <div class="feature container px-4 py-5" id="icon-grid">
+    <h2 class="display-4 feature-title pb-2 border-bottom">Why choose Driving Knights?</h2>
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+      <div class="col d-flex align-items-start">
+        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#bootstrap"></use></svg>
+        <div>
+          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Wide Selection</h3>
+          <p> Discover a range of vehicles, from sleek sedans to spacious SUVs, providing the perfect ride for any occasion.</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#cpu-fill"></use></svg>
+        <div>
+          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Easy Booking</h3>
+          <p>Our user-friendly online platform allows you to book your dream car in just a few clicks, ensuring a hassle-free reservation process.</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#calendar3"></use></svg>
+        <div>
+          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Transparent Pricing</h3>
+          <p>No hidden fees or surprises. Our transparent pricing policy ensures you know exactly what you're paying for, with competitive rates and flexible rental options.</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#home"></use></svg>
+        <div>
+          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Convenience</h3>
+          <p>Pick up and drop off your rental at locations convenient for you. We're here to make your journey as convenient as possible.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--carousel-->
+  <div class="container">
+  <div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./Assets/Cars.png" class="d-block w-100" alt="Cars" height="600">
+      </div>
+      <div class="carousel-item">
+        <img src="./Assets/Renting2.png" class="d-block w-100" alt="Renting" height="600">
+      </div>
+      <div class="carousel-item">
+        <img src="./Assets/Screenshot 2023-12-29 210643.png" class="d-block w-100" alt="Renting" height="600">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+<!--footer-->
+<div class="footer container">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+        <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+      </a>
+      <span class="mb-3 mb-md-0 text-body-secondary">© 2023 Driving Knights, Inc</span>
+    </div>
+
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+      <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+      <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+      <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+    </ul>
+  </footer>
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

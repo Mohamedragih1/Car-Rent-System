@@ -1,0 +1,43 @@
+.container-class{
+    height: 40vi;
+    background-color:  #FFD700;
+    border-radius: 50px;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 100px;
+}
+
+.container-class *{
+    margin-left: 50px;
+}
+
+html{
+    height: 100%;
+}
+
+.container-class h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: xx-large;
+    font-weight: bolder;
+    color:  #36454F;
+    margin-right: 200px;
+}
+
+.php-container h2{
+    color: #36454F;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.container-class label{
+    color: #36454F;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.container-class input{
+    background-color: white;
+    color: black;
+}

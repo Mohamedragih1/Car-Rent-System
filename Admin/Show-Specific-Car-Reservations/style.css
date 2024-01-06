@@ -1,0 +1,36 @@
+.container{
+    background-color: #FFD700;
+    height: 40vi;
+    border-radius: 40px;
+}
+.done{
+    background-color: black;
+    margin-top: 40px;
+}
+html{
+    background-color: black;
+}
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: xxx-large;
+    font-weight: bolder;
+    text-align: center;
+    
+}
+label{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: x-large; 
+}
+.goo{
+    margin-top: 10px;
+    width: 350px;
+    height: 40px;
+}
+.submit-btn{
+    margin-top: 10px;
+    width: 200px;
+    height: 40px;
+    background-color: black;
+    color:#FFD700 ;
+    border-radius: 40px;
+}

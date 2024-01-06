@@ -1,0 +1,50 @@
+.search{
+    height: 38vi;
+    background-color:  #FFD700;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+
+.search h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bolder;
+    font-size: xx-large;
+    color:  #36454F;
+}
+
+.search label{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: large;
+    color: #36454F;
+}
+
+select{
+    background-color: white;
+    color: black;
+}
+
+.x{
+    background-color: white;
+    border: 1px 1px white;
+}
+
+.navbar-brand img{
+    filter: brightness(0) invert(1) sepia(1) saturate(5) hue-rotate(330deg);
+}
+
+.navbar-brand h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bolder;
+    font-size: x-large;
+    padding-top: 13px;
+}
+
+.search-button{
+    background-color: orangered;
+    border-radius: 10px;
+    border-color:  #FFD700;
+    border: 0px 0px ;
+    color: black;
+    font-weight: bolder;
+}
