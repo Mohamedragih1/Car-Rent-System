@@ -36,7 +36,7 @@ This project implements a Car Rental System with the following features:
 ### Admin Pages:
 1. **Admin Home Page**
    - Buttons for various admin privileges.
-   - Logout button to delete the admin account.
+   - Logout button to log out from the admin account.
 
 2. **Show All Reservations**
    - Input for start and end dates.
